@@ -15,11 +15,9 @@
 #define ZMK_BEHAVIORS_KEEP_TO
 #define ZMK_BEHAVIORS_KEEP_TOG
 #define ZMK_BEHAVIORS_KEEP_TRANS
-
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1600  // default: 600
-// #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
 
-#include <dt-bindings/zmk/pointing.h>
+// #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
 
 #include <dt-bindings/zmk/indicators.h>
 #include <behaviors.dtsi>
@@ -81,7 +79,9 @@
                          &kp LSHIFT  &kp SPACE  &kp LEFT_GUI    &mo 2  &lt 1 SPACE  &kp RSHIFT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &scroll_u_d>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>,
+                <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_DOWN>;
         };
 
         lower_layer {
