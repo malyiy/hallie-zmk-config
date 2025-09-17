@@ -16,7 +16,7 @@
 #define ZMK_BEHAVIORS_KEEP_TOG
 #define ZMK_BEHAVIORS_KEEP_TRANS
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1000  // default: 600
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 2000  // default: 600
 // #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
 
 #include <dt-bindings/zmk/pointing.h>
@@ -32,6 +32,7 @@
 #define LWR 1
 #define RSE 2
 #define ADJ 3
+#define MML 4
 
 &lt { tapping-term-ms = <120>; };
 
@@ -118,7 +119,7 @@
         mouse_layer {
             bindings = <
 &out OUT_BLE  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR   &out OUT_USB    &none           &none           &none         &none            &none             &none
-&none         &none         &none         &none         &none        &kp X           &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &kp K_PLAY_PAUSE  &none
+&none         &none         &none         &none         &none        &none           &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &kp K_PLAY_PAUSE  &none
 &none         &none         &none         &none         &ind IND_ON  &ind BAT_ST     &ind IND_ON     &mkp MB1        &mkp MB2      &none            &none             &none
                                           &mo 3         &none        &none           &none           &none           &none
             >;
