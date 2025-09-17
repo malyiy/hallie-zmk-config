@@ -27,6 +27,8 @@
 #define RSE 2
 #define ADJ 3
 
+
+/ { 
 macros {
     vim_left: vim_left {
         compatible = "zmk,behavior-macro";
