@@ -65,6 +65,14 @@
             bindings = <&kp LC(W) &kp L>;
             label = "VIM_RIGHT";
         };
+
+        scroll_d_u: behavior_sensor_rotate_mouse_wheel_up_down {
+    		compatible = "zmk,behavior-sensor-rotate";
+    		#sensor-binding-cells = <0>;
+    		tap-ms = <20>;
+    		bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+    		display-name = "Mouse wheel (UD)";
+	    };
     };
 
     keymap {
@@ -79,10 +87,7 @@
                          &kp LSHIFT  &kp SPACE  &kp LEFT_GUI    &mo 2  &lt 1 SPACE  &kp RSHIFT
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_DN C_VOL_UP>,
-                <&inc_dec_kp C_AC_SCROLL_DOWN C_AC_SCROLL_UP>;
-        };
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &scroll_d_u>;
 
         lower_layer {
             display-name = "Movement";
