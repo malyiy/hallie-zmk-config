@@ -27,16 +27,6 @@
 #define RSE 2
 #define ADJ 3
 
-tapping-term-ms = <110>;};
-
-tapping-term-ms {
-    = <
-
-    110 = >;
-};
-
-/
-
 macros {
     vim_left: vim_left {
         compatible = "zmk,behavior-macro";
