@@ -90,10 +90,10 @@
 
         raise_layer {
             bindings = <
-&none      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                &kp NUMBER_6           &kp NUMBER_7     &kp N8             &kp N9                &kp N0     &kp BACKSPACE
-&none      &kp CAPSLOCK  &none         &kp K_CMENU   &kp MINUS     &kp EQUAL             &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_GUI          &kp LCTRL  &none
-&kp GRAVE  &none         &none         &none         &none         &none                 &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp NON_US_BACKSLASH  &kp DEL    &kp RSHIFT
-                                       &none         &none         &mt LG(RETURN) RET    &none                  &none            &none
+&none      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5        &kp NUMBER_6           &kp NUMBER_7     &kp N8             &kp N9                &kp N0     &kp BACKSPACE
+&none      &kp CAPSLOCK  &none         &kp K_CMENU   &kp MINUS     &kp EQUAL     &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_GUI          &kp LCTRL  &none
+&kp GRAVE  &none         &none         &none         &none         &none         &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp NON_US_BACKSLASH  &kp DEL    &kp RSHIFT
+                                       &none         &none         &kp RETURN    &none                  &none            &none
             >;
 
             sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW &inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
