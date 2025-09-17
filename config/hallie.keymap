@@ -37,6 +37,15 @@
 &mt { tapping-term-ms = <120>; };
 
 / {
+
+	scroll_d_u: behavior_sensor_rotate_mouse_wheel_up_down {
+		compatible = "zmk,behavior-sensor-rotate";
+		#sensor-binding-cells = <0>;
+		tap-ms = <20>;
+		bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+		display-name = "Mouse wheel (UD)";
+	};
+
     macros {
         vim_left: vim_left {
             compatible = "zmk,behavior-macro";
@@ -66,13 +75,6 @@
             label = "VIM_RIGHT";
         };
 
-        scroll_d_u: behavior_sensor_rotate_mouse_wheel_up_down {
-    		compatible = "zmk,behavior-sensor-rotate";
-    		#sensor-binding-cells = <0>;
-    		tap-ms = <20>;
-    		bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-    		display-name = "Mouse wheel (UD)";
-	    };
     };
 
     keymap {
